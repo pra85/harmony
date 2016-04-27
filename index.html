@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <title>Harmony - SoundCloud, Spotify & Google Play Music</title>
+    <title>Harmony - Spotify, SoundCloud and Google Play Music</title>
   </head>
 
 
@@ -26,15 +26,25 @@
         <!---</div>-->
 
         <section id="downloads" class="clearfix">
-          <h2>Play tracks from all your favorite services in the same beautiful app</h2>
+          <h2>Play tracks from all your favorite services in the same app</h2>
 
           <!--<a href="https://github.com/vincelwt/harmony" id="view-on-github" class="button"><span>Star on GitHub</span></a>-->
 
-          <a href="https://github.com/vincelwt/harmony" id="download-zip" class="button">
+          <!--<a href="https://github.com/vincelwt/harmony" id="download-zip" class="button">
           <img class="download-icon" src="images/elementary-icon.png"/>
           <span class="downloadfor">Download for</span>
           <span class="service">Elementary OS</span>
-          </a>
+          </a>-->
+
+          <div id="release-notes">
+            <div>
+              <center><h3>How to install on Elementary OS</h3></center>
+              <center><h4>Replace /64 with /32 if using 32bit system</h4></center>
+              </p>echo -e "deb http://cdn.rawgit.com/vincelwt/harmony/gh-pages/r/64 ./" | sudo tee -a /etc/apt/sources.list</p>
+              <p>sudo apt-get update</p>
+              <p>sudo apt-get install harmony --force-yes -y</p></b>
+            </div>
+          </div>
         </section>
 
         <hr>
