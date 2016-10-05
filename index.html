@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -49,29 +50,20 @@
         <img src="./assets/small-coverflow.png">
     </div>
 
-    <!--
     <div class="feature" id="feature-themes">
         <div class="feature-item padding100">
             <h2>Dark mode</h2>
             <p>Use Cmd+D to switch to dark mode</p>
         </div>
-        <img src="./assets/small-dark.png">
-    </div>-->
-
-    <div class="feature" id="feature-shortcuts">
-        <div class="feature-item">
-            <h2>Media keys and shortcut</h2>
-            <p>Support for native media keys & keyboard shortcuts</p>
-        </div>
-        <img src="./assets/mediakeys.png">
+        <img src="./assets/dark.png">
     </div>
 
     <div class="feature" id="feature-themes">
-        <div class="feature-item padding100">
+        <div class="feature-item padding35">
             <h2>Responsive</h2>
             <p>Whatever size you want it to be, it will follow you</p>
         </div>
-        <img src="./assets/very-small.png">
+        <img style="width:270px" src="./assets/very-small.png">
     </div>
 
     <div class="feature hide" name="linux-feat" id="feature-shortcuts">
@@ -80,6 +72,15 @@
             <p>Use the mini player in the system sound indicator to control your music without interrupting what you're doing</p>
         </div>
         <img style="width:270px" src="./assets/f-soundmenu.png">
+    </div>
+
+    
+    <div class="feature" id="feature-shortcuts">
+        <div class="feature-item">
+            <h2>Media keys and shortcut</h2>
+            <p>Support for native media keys & keyboard shortcuts</p>
+        </div>
+        <img src="./assets/mediakeys.png">
     </div>
 
     <div class="feature" id="feature-shortcuts">
@@ -120,51 +121,44 @@
         </div>
     </div>
 
-    <!--
-     <div class="buttons-row" id="bottom-buttons">
+    <hr>
+
+    <!--<h2>Download</h2>
+
+     <div class="buttons-row" id="dl-buttons">
         <div class="buttons-col">
             <a name="download_link" class="btn btn-large btn-download">
-                Linux 64bits
-                <div name="linux-btn" class="hide btn-desc"><i class="fa fa-linux"></i> for Linux (deb)</div>
-                <div name="windows-btn" class="hide btn-desc"><i class="fa fa-windows"></i> for Windows</div>
-                <div name="macos-btn" class="hide btn-desc"><i class="fa fa-apple"></i> for Mac OS (.app)</div>
+                Linux
+                <div name="linux-btn" class="hide btn-desc">AppImage</div>
             </a>
             <br>
             <a name="download_link" class="btn btn-large btn-download">
-                Linux 32bits
-                <div name="linux-btn" class="hide btn-desc"><i class="fa fa-linux"></i> for Linux (deb)</div>
-                <div name="windows-btn" class="hide btn-desc"><i class="fa fa-windows"></i> for Windows</div>
-                <div name="macos-btn" class="hide btn-desc"><i class="fa fa-apple"></i> for Mac OS (.app)</div>
+                Debian / Ubuntu
+                <div name="linux-btn" class="btn-desc">.deb</div>
             </a>
             <br>
-            <a name="download_link" class="btn btn-large btn-download">
-                Linux 
-                <div name="linux-btn" class="hide btn-desc"><i class="fa fa-linux"></i> for Linux (deb)</div>
-                <div name="windows-btn" class="hide btn-desc"><i class="fa fa-windows"></i> for Windows</div>
-                <div name="macos-btn" class="hide btn-desc"><i class="fa fa-apple"></i> for Mac OS (.app)</div>
-            </a>
         </div>
+
         <div class="buttons-col">
             <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XLQTUNFTN9FU8" class="btn btn-large btn-online">
                 Windows
-                <div class="btn-desc">
-                    <i class="fa fa-paypal"></i> <i class="fa fa-credit-card"></i>
-                </div>
+                <div name="linux-btn" class="btn-desc">.exe</div>
+            </a>
+            <br>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XLQTUNFTN9FU8" class="btn btn-large btn-online">
+                Win portable
+                <div name="linux-btn" class="btn-desc">.zip</div>
             </a>
         </div>
 
         <div class="buttons-col">
             <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XLQTUNFTN9FU8" class="btn btn-large btn-online">
                 Mac OS
-                <div class="btn-desc">
-                    <i class="fa fa-paypal"></i> <i class="fa fa-credit-card"></i>
-                </div>
+                <div name="linux-btn" class="btn-desc">.dmg</div>
             </a>
         </div>
-    </div>
+    </div>-->
 
-    -->
-    <hr>
 
     <div class="footer">
         <div class="right">No affiliation with Google, SoundCloud or Spotify</div>
@@ -193,7 +187,7 @@ if (os.indexOf("win") > -1 ) {
     }
 
     for (var i=0; i<document.getElementsByName('download_link').length; i++) {
-        document.getElementsByName('download_link')[i].href = "https://github.com/vincelwt/harmony/releases/download/0.2.3/Harmony.Setup.0.2.3.exe";
+        document.getElementsByName('download_link')[i].href = "https://github.com/vincelwt/harmony/releases/download/0.3.0/harmony-Setup-0.3.0.exe";
     }
 } else if (os.indexOf("linux") > -1){
     console.log("Linux detected");
@@ -206,7 +200,7 @@ if (os.indexOf("win") > -1 ) {
     }
 
     for (var i=0; i<document.getElementsByName('download_link').length; i++) {
-        document.getElementsByName('download_link')[i].href = "https://github.com/vincelwt/harmony/releases/download/0.2.3/harmony-0.2.3.deb";
+        document.getElementsByName('download_link')[i].href = "https://github.com/vincelwt/harmony/releases/download/0.3.0/harmony-0.3.0-amd64.deb";
     }
 } else if (os.indexOf("mac") > -1){
     console.log("Mac OS detected");
@@ -219,7 +213,7 @@ if (os.indexOf("win") > -1 ) {
     }
 
     for (var i=0; i<document.getElementsByName('download_link').length; i++) {
-        document.getElementsByName('download_link')[i].href = "https://github.com/vincelwt/harmony/releases/download/0.2.3/Harmony.app.zip";
+        document.getElementsByName('download_link')[i].href = "https://github.com/vincelwt/harmony/releases/download/0.3.0/harmony-0.3.0.dmg";
     }
 } else {
     for (var i=0; i<document.getElementsByName('linux-btn').length; i++) {
