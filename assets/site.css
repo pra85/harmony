@@ -230,3 +230,10 @@ hr {
 .hide {
     display: none;
 }
+
+.twitter-follow-button {
+    position: fixed !important;
+    top: 10px;
+    left: 20px;
+    z-index: 10;
+}
